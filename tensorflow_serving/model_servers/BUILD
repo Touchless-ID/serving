@@ -403,6 +403,17 @@ cc_library(
         "@org_tensorflow//tensorflow/core/tpu:tpu_model_server_initializer",
     ]),
 )
+cc_library(	
+    name = "openssl",	
+    hdrs = glob(["**/include/openssl/*.h"]),	
+    srcs = glob([	
+	"**/libssl.a",	
+	"**/libcrypto.a",	
+    ]),	
+    strip_include_prefix= "include",	
+    includes = ['./include/openssl'],	
+    visibility = ["//visibility:public"],	
+)
 
 cc_binary(
     name = "tensorflow_model_server",
