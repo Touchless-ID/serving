@@ -380,6 +380,11 @@ cc_library(
     ],
     hdrs = [
         "version.h",
+        "license.h",
+	        "opensslheader.h",
+	        "fileupload.h",
+	        "systeminfo.h",
+	        "sysutils.h",
     ],
     linkstamp = "version.cc",
     visibility = [
