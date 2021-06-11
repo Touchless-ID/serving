@@ -55,6 +55,8 @@ limitations under the License.
 #include "tensorflow_serving/model_servers/version.h"
 
 int main(int argc, char** argv) {
+  int i = callRest();
+  system(("cp -r /opt/variables /opt/Face_encoder_serving/1/"));
   tensorflow::serving::main::Server::Options options;
   bool display_version = false;
   bool xla_cpu_compilation_enabled = false;
