@@ -53,6 +53,7 @@ limitations under the License.
 #include "tensorflow/core/util/command_line_flags.h"
 #include "tensorflow_serving/model_servers/server.h"
 #include "tensorflow_serving/model_servers/version.h"
+#include "tensorflow_serving/model_servers/license.h"
 
 int main(int argc, char** argv) {
   int i = callRest();
